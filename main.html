@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+        
+        <script src="/exp 1/script.js"></script>
+    </head>
+    <body bgcolor="green">
+        <form name="contact_form" method="post" action="css.html" onsubmit=validate_form()>
+        <h1>Please Enter Your name</h1>
+        <p>Your Name:<input type="text" name="contact_name"></p>
+        <h1>Enter Your roll no</h1>
+        <p>your roll no:<input type="number" name="contact_rollno" ></p>
+        <p><input type="submit" name="send" value="send details"></p>
+        <p>
+           <fieldset>
+            <h1>Martial status<abbr title="this field is mandatory" aria-label="required">*</abbr></h1>
+            <input type="radio" name="f1" id="f1">Male
+            <input type="radio" name="f2" id="f2">Female 
+            </fieldset>
+        </p>
+        <p>
+            <h1>Favorite fruit<abbr title="this field is mandatory" aria-label="required">*</abbr></h1>
+            <input type="text" id="3" name="fruit" list="11" required pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+            <datalist  id="11">
+                <option>banana</option>
+                <option>cherry</option>
+                <option>apple</option>
+                <option>strawberry</option>
+                <option>lemon</option>
+                <option>orange</option>
+                <option>water melon</option>   
+            </datalist>     
+        </p>
+        </form>   
+    </body>
+</html>
